@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    color: #2c3e50;
+    color: #45355e;
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5em;
@@ -31,7 +31,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #2c3e50;
+    color: #45345f;
     font-weight: 500;
 }
 
@@ -57,9 +57,9 @@ input[type="tel"]:focus,
 input[type="number"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #3498db;
+    border-color: #8441dc;
     outline: none;
-    box-shadow: 0 0 0 2px rgba(52,152,219,0.2);
+    box-shadow: 0 0 0 2px rgba(129, 91, 234, 0.2);
 }
 
 .radio-group {
@@ -76,7 +76,7 @@ textarea:focus {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #7a2eea;
     color: #fff;
     padding: 12px 24px;
     border: none;
@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #7a2eea;
 }
 
 .error {
@@ -109,12 +109,12 @@ button:hover {
 }
 
 .nav {
-    margin-top: 20px;
+    margin-top: 60px;
     text-align: center;
 }
 
 .nav a {
-    color: #3498db;
+    color: #3d0788;
     text-decoration: none;
     margin: 0 10px;
     font-weight: 500;
@@ -138,7 +138,7 @@ button:hover {
 }
 
 .card h3 {
-    color: #2c3e50;
+    color: #6d1cd7;
     margin-bottom: 10px;
 }
 
@@ -185,6 +185,37 @@ button:hover {
     padding: 8px;
     font-size: 14px;
 }
+
+@media (max-width: 390px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .card-list {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav a {
+        margin: 0;
+    }
+}
+
 
 @media (max-width: 390px) {
     .container {
